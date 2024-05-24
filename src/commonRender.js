@@ -48,7 +48,7 @@ function getCompanyInfoText(brandName) {
 function getRenderTimeStyle(lastModifyTime) {
   var offsetTimeDay;
   if (lastModifyTime) {
-    offsetTimeDay = dayjs().diff(dayjs(lastModifyTime), "day");
+    offsetTimeDay = dayjs().diff(dayjs(lastModifyTime), "day", true);
   } else {
     lastModifyTime = -1;
   }
