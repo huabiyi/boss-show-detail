@@ -54,7 +54,7 @@ function getRenderTimeStyle(lastModifyTime) {
   }
   return (
     "color:white;font-size:12px;background-color: " +
-    getTimeColorByoffsetTimeDay(offsetTimeDay) +
+    getTimeColorByoffsetTimeDay(Math.ceil(offsetTimeDay)) +
     ";"
   );
 }
